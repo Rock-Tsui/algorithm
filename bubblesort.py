@@ -1,9 +1,9 @@
 def bubble_sort(L):
     length = len(L)
     for i in range(length-1):
-        for j in range(i+1,length):
-            if L[i] > L[j]:
-                L[i], L[j] = L[j], L[i]
+        for j in range(length-i-1):
+            if L[j] > L[j+1]:
+                L[j], L[j+1] = L[j+1], L[j]
     print(L)
 
 if __name__ == '__main__':
